@@ -5,19 +5,18 @@ include 'Configuracion.php';
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Los Ajolotitos</title>
+<title>Los Ajolotitos</title>
     <meta charset="utf-8">
     <?php include "footer.php"; ?>
 </head>
 </head>
 <body>
 <div class="panel-body text-light">
-    <h1>Acceseorios</h1>
+    <h1>Ropa</h1>
     <a href="VerCarta.php"></a>
-  
         <?php
         //get rows query
-        $query = $db->query("SELECT * FROM mis_productos WHERE cosa='accesorio' ORDER BY id DESC LIMIT 10");
+        $query = $db->query("SELECT * FROM mis_productos WHERE cosa='ropa' ORDER BY id DESC LIMIT 10");
         if($query->num_rows > 0){ 
             while($row = $query->fetch_assoc()){
         ?>
@@ -32,7 +31,7 @@ include 'Configuracion.php';
             <th>Eliminar &nbsp;</th>
         </tr>
     </thead>
-    <tbody >
+    <tbody>
         <tr>
         <td><?php echo $row["name"]; ?></td>
                 <td><?php echo $row["description"]; ?></td>
@@ -51,9 +50,9 @@ include 'Configuracion.php';
         <?php } ?>
     </div>
         </div>
- <div class="panel-footer"></div>
- </div><!--Panek cierra-->
- 
+    <div class="panel-footer"></div>
+    </div><!--Panek cierra-->
+
 </div>
 </body>
 </html>

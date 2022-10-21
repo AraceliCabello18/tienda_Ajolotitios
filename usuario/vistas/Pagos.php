@@ -1,21 +1,17 @@
 <?php include "header.php"; ?>
- <?php include "footer.php"; ?>
+<?php include "footer.php"; ?>
 <?php
 // include database configuration file
 include 'Configuracion.php';
-
 // initializ shopping cart class
 include 'La-carta.php';
 $cart = new Cart;
-
 // redirect to home if cart is empty
 if($cart->total_items() <= 0){
     header("Location: index.php");
 }
-
 // set customer ID in session
 $_SESSION['sessCustomerID'] = 1;
-
 // get customer details by session customer ID
 $query = $db->query("SELECT * FROM clientes WHERE id = ".$_SESSION['sessCustomerID']);
 $custRow = $query->fetch_assoc();
