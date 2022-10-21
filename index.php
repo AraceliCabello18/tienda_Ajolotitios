@@ -17,17 +17,20 @@
 							<table class="table table-hover">
 								<tr>
 									<th>
-                                    Tiendas de ropa vintage y de segunda mano en la CDMX
+                                    Tiendas de ropa y accesorios los Ajolotitos Descubre una exclusiva selección de marcas
+									en nuestra tienda en la CDMX con envios a tu domicilio.
 									</th>
 								</tr>
 								<tr>
 									<th>
-                                    Esta tienda prendas y accesorios en buen estado y a presios accecibles
+                                    Que la vida se prepare para ti con lo mejor de la moda de Los Ajolotitos Tecnológicos S.A De C.V.
+									¡Encuentra ropa, calzado y accesorios con Envío Gratis desde $499 MXN!.
 									</th>
 								</tr>
 								<tr>
 									<th>
-									La moda da es un apoyo visual y de actitud que eliges para reafirmar y complementar tu identidad
+									El diseño mexicano e internacional alcanza sus máximos niveles con 
+									las prendas de vestir y accesorios que se exhiben en nuestra tienda.
 									</th>
 								</tr>
 							</table>
@@ -38,7 +41,8 @@
 
 			<hr class="my-4">
 			<p>
-            Los Ajolotitos Tecnológicos S.A De C.V
+            Los Ajolotitos Tecnológicos S.A De C.V 
+			Echo por: Cabello Juárez Araceli Aylin, Méndez Jiménez Juan Carlos y Martines Zaragoza Laura Itzel
 			</p>
 		</div>
     </div>
