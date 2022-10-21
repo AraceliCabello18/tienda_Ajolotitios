@@ -23,24 +23,14 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
             <a class="nav-link" href="index.php">Inicio
-                    <span class="sr-only">(current)</span>
-                </a>
-                </li>
-            <li class="nav-item">
-            <a class="nav-link" href="producto.php">Accesorios</a>
+              <span class="sr-only">(current)</span>
+            </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="ropa.php">Ropa</a>
-            </li>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="Pagos.php">pagos</a>
+              <a class="nav-link" href="./usuario/loginUser.php">Usuarios</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="VerCarta.php">Ver Carta</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./administrador/loginAdmin.php">Administrador</a>
+              <a class="nav-link" href="./administrador/loginAdmin.php">Administrador</a>
             </li>
         </ul>
         </div>
