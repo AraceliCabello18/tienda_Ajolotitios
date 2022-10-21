@@ -1,14 +1,18 @@
 <?php
-//DB details
-$dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'tienda';
+function conexion(){
+    $servidor = 'localhost';
+    $usuario = 'root';
+    $password = '';
+    $bd = 'tienda';
+    $puerto = 3306;
 
-//Create connection and select DB
-$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-if ($db->connect_error) {
-    die("No hay Conexion con la base de datos: " . $db->connect_error);
-} 
+    $conexion = mysqli_connect(
+                    $servidor,
+                    $usuario,
+                    $password,
+                    $bd,
+                    $puerto
+    );
+        return $conexion;
+}
 ?>

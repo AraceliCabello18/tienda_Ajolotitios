@@ -4,7 +4,7 @@ $conexion = conexion();
 $user = $_POST['usuario'];
 $pass = $_POST['password'];
 $pass = sha1($pass);
-$sql = "INSERT INTO t_usuarios(usuario, password)
+$sql = "INSERT INTO Admin(usuario, password)
             VALUE('$user','$pass')";
 $respuesta = mysqli_query($conexion, $sql);
 if ($respuesta) {

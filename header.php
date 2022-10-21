@@ -39,6 +39,9 @@
             <li class="nav-item">
             <a class="nav-link" href="VerCarta.php">Ver Carta</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./administrador/loginAdmin.php">Administrador</a>
+            </li>
         </ul>
         </div>
     </div>

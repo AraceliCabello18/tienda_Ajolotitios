@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Registro de Usuarios</title>
+    <title>Registro de Administrador</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 <body>
@@ -19,7 +19,7 @@
     <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
         <form action="./procesos/registroUsuarios.php" method="post">
             <div class="d-flex align-items-center mb-3 pb-1">
-                <span class="h1 fw-bold mb-0">Registro de Usuario</span>
+                <span class="h1 fw-bold mb-0">Registro</span>
             </div>
         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Regístrate Ahora</h5>
         <!-- Email input -->
@@ -36,7 +36,7 @@
         <a href="./loginAdmin.php">Login</a>
         </div>
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Crear nuevo usuario</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Crear Administrador</button>
         
     </form>
     <!-- Option 1: Bootstrap Bundle with Popper -->
