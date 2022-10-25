@@ -1,8 +1,8 @@
-<?php include "header.php"; ?>
+<?php include "./header.php"; ?>
     <!-- Page Content -->
     <div class="container">
     <div class="jumbotron">
-			<h1 class="display-4">Los Ajolotitos</h1>
+			<h1 class="display-4">Los Ajolotitos Tecnológicos S.A De C.V </h1>
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="card">
@@ -46,4 +46,4 @@
 			</p>
 		</div>
     </div>
-    <?php include "footer.php"; ?>
+    <?php include "./footer.php"; ?>

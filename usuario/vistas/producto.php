@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "../procesos/headerUser.php"; ?>
 <?php
 include 'Configuracion.php';
 ?>
@@ -11,7 +11,7 @@ include 'Configuracion.php';
     .container{padding: 10px;}
     .table{width: 100%;float: left;}
     </style>
-    <?php include "footer.php"; ?>
+    <?php include "../procesos/footerUser.php"; ?>
 </head>
 </head>
 <body>

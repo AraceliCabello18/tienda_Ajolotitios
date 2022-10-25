@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="./lib"/>
+    <link rel="stylesheet" href="librerias/css/style.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
     <title>Los Ajolotitos</title>
   </head>
@@ -22,15 +22,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="./index.php">Inicio
-              <span class="sr-only">(current)</span>
-            </a>
+            <a class="nav-link" href="index.php">Inicio
+                    <span class="sr-only">(current)</span>
+                </a>
+                </li>
+            <li class="nav-item">
+            <a class="nav-link" href="producto.php">categorias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./usuario/inicioUser.php">Usuarios</a>
+            <a class="nav-link" href="ropa.php">Articulos</a>
+            </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./administrador/loginAdmin.php">Administrador</a>
+            <a class="nav-link" href="Pagos.php">Clientes</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="VerCarta.php">Ventas</a>
             </li>
         </ul>
         </div>

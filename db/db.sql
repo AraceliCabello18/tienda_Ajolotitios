@@ -1,6 +1,6 @@
 create database tienda;
 use tienda;
-CREATE TABLE IF NOT EXISTS `Admin` (
+CREATE TABLE IF NOT EXISTS `t_admin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `usuario` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
