@@ -1,7 +1,5 @@
 <?php session_start();
 
-
-
 require_once "../clases/Conexion.php";
 
 $obj=new conectar();
@@ -18,26 +16,23 @@ FROM articulos WHERE id_producto='$id_producto'";
 $result=mysqli_query($conexion,$sql);
 $ver=mysqli_fetch_row($result);
 
-
 if(isset($_SESSION['usuario'])){
-
 ?>
 
 <?php include "dependencias.php"; ?>
 
 <div class="container px-5 my-5" style="background:color:red;">
-  <div class="row justify-content-center">
+<div class="row justify-content-center">
     <div class="col-lg-8">
-      <div class="card border-0 rounded-3 shadow-lg">
+    <div class="card border-0 rounded-3 shadow-lg">
         <div class="card-body p-4">
-          <div class="text-center">
+        <div class="text-center">
             <div class="h1 fw-light">Actualizar datos de articulos</div>
-          </div>
+        </div>
 
-		  <form  action="../procesos/articulos/actualizaArticulos.php" method="POST">
+		<form  action="../procesos/articulos/actualizaArticulos.php" method="POST">
 
 						<input type="text" name="id_producto" hidden="" value="<?php echo $id_producto?>">
-
 
 						<label>Categoria</label>
 						<select class="form-control input-sm" id="categoriaSelect" name="categoriaSelect" value="<?php echo $ver[0]?>">
@@ -57,18 +52,11 @@ if(isset($_SESSION['usuario'])){
 						<p></p>
 						<button class="btn btn-info">Actualizar</button>
 					</form>
-
-          
-            
-
         </div>
-      </div>
     </div>
-  </div>
+    </div>
 </div>
-
-
-
+</div>
 
 <div class="modal fade" id="abremodalUpdateArticulo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog modal-sm" role="document">
@@ -81,7 +69,6 @@ if(isset($_SESSION['usuario'])){
 					<form  action="../procesos/articulos/actualizaArticulos.php" method="POST">
 
 						<input type="text" name="id_producto" hidden="" value="<?php echo $id_producto?>">
-
 
 						<label>Categoria</label>
 						<select class="form-control input-sm" id="categoriaSelect" name="categoriaSelect" value="<?php echo $ver[0]?>">
@@ -106,11 +93,6 @@ if(isset($_SESSION['usuario'])){
 				</div>
 			</div>
 		</div>
-
-
-
-
-	
 
 	<?php 
 }else{
