@@ -1,4 +1,4 @@
-<?php include "./footerUser.php"; ?>
+ <?php include "footer.php"; ?>
 <?php
 date_default_timezone_set("America/Lima");
 // Iniciamos la clase de la carta
@@ -58,8 +58,8 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             header("Location: Pagos.php");
         }
     }else{
-        header("Location: inicioUser.php");
+        header("Location: index.php");
     }
 }else{
-    header("Location: inicioUser.php");
+    header("Location: index.php");
 }

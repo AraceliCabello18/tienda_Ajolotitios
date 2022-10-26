@@ -1,4 +1,4 @@
-<?php include "../procesos/headerUser.php"; ?>
+<?php include "header.php"; ?>
 <?php
 // initializ shopping cart class
 include 'La-carta.php';

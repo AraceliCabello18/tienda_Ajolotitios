@@ -1,18 +1,23 @@
 <?php
-function conexion(){
-    $servidor = 'localhost';
-    $usuario = 'root';
-    $password = '';
-    $bd = 'tienda';
-    $puerto = 3306;
 
-    $conexion = mysqli_connect(
-                    $servidor,
-                    $usuario,
-                    $password,
-                    $bd,
-                    $puerto
-    );
+
+class conectar{
+    private $servidor="localhost";
+    private $usuario="root";
+    private $bd="tienda";
+    private $password="";
+
+
+    public function conexion (){
+        $conexion= mysqli_connect(
+            $this->servidor,
+            $this->usuario,
+            $this->password,
+            $this->bd
+        );
+
         return $conexion;
+    }
 }
+
 ?>

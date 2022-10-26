@@ -1,4 +1,4 @@
-<?php include "../procesos/headerUser.php"; ?>
+<?php include "header.php"; ?>
 <?php
 include 'Configuracion.php';
 ?>
@@ -7,7 +7,7 @@ include 'Configuracion.php';
 <head>
 <title>Los Ajolotitos</title>
     <meta charset="utf-8">
-    <?php include "../procesos/footerUser.php"; ?>
+    <?php include "footer.php"; ?>
 </head>
 </head>
 <body>

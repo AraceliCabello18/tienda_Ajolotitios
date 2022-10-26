@@ -1,7 +1,7 @@
- <?php include "./usuario/procesos/footerUser.php"; ?>
+ <?php include "footer.php"; ?>
 <?php
 if(!isset($_REQUEST['id'])){
-    header("Location: inicioUser.php");
+    header("Location: index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ if(!isset($_REQUEST['id'])){
 <div class="panel-heading"> 
 
 <ul class="nav nav-pills">
-  <li role="presentation"><a href="inicioUser.php">Inicio</a></li>
+  <li role="presentation"><a href="index.php">Inicio</a></li>
 </ul>
 </div>
 
@@ -29,7 +29,7 @@ if(!isset($_REQUEST['id'])){
 
     <h1>Estado de su Orden</h1>
     <p>Su pedido ha sido enviado exitosamente. La ID del pedido es #<?php echo $_GET['id']; ?></p>
-    </div>
+           </div>
  <div class="panel-footer"></div>
  </div><!--Panek cierra-->
 </div>

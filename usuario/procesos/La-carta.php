@@ -1,4 +1,4 @@
-<?php include "./footerUser.php"; ?>
+ <?php include "footer.php"; ?>
 <?php session_start();
 class Cart {
     protected $cart_contents = array();
