@@ -1,7 +1,7 @@
- <?php include "footer.php"; ?>
+ <?php include "./footerUser.php"; ?>
 <?php
 if(!isset($_REQUEST['id'])){
-    header("Location: index.php");
+    header("Location: indexUser.php");
 }
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ if(!isset($_REQUEST['id'])){
 <div class="panel-heading"> 
 
 <ul class="nav nav-pills">
-  <li role="presentation"><a href="index.php">Inicio</a></li>
+  <li role="presentation"><a href="indexUser.php">Inicio</a></li>
 </ul>
 </div>
 

@@ -13,9 +13,9 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
     <div class="container">
-        <a class="navbar-brand" href="#">Los Ajolotitos</a>
+        <a class="navbar-brand" href="#">Armario Vintage</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,14 +23,21 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
             <a class="nav-link" href="index.php">Inicio
-              <span class="sr-only">(current)</span>
-            </a>
+                    <span class="sr-only">(current)</span>
+                </a>
+                </li>
+            <li class="nav-item">
+            <a class="nav-link" href="producto.php">Accesorios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./usuario/loginUser">Usuarios</a>
+            <a class="nav-link" href="ropa.php">Ropa</a>
+            </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./administrador/loginAdmin.php">Administrador</a>
+            <a class="nav-link" href="Pagos.php">pagos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="VerCarta.php">Ver Carta</a>
             </li>
         </ul>
         </div>

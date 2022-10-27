@@ -1,7 +1,7 @@
-<?php include "header.php"; ?>
+<?php include "./headerUser.php"; ?>
 <?php
 // initializ shopping cart class
-include 'La-carta.php';
+include './La-carta.php';
 $cart = new Cart;
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $cart = new Cart;
     </style>
     <script>
     function updateCartItem(obj,id){
-        $.get("cartAction.php", {action:"updateCartItem", id:id, qty:obj.value}, function(data){
+        $.get("./cartAction.php", {action:"updateCartItem", id:id, qty:obj.value}, function(data){
             if(data == 'ok'){
                 location.reload();
             }else{
@@ -62,11 +62,11 @@ $cart = new Cart;
     </tbody>
     <tfoot>
         <tr>
-            <td><a href="producto.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a></td>
+            <td><a href="./producto.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a></td>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
             <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' MXN'; ?></strong></td>
-            <td><a href="Pagos.php" class="btn btn-success btn-block">Pagos <i class="glyphicon glyphicon-menu-right"></i></a></td>
+            <td><a href="./Pagos.php" class="btn btn-success btn-block">Pagos <i class="glyphicon glyphicon-menu-right"></i></a></td>
             <?php } ?>
         </tr>
     </tfoot>
