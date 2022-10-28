@@ -25,7 +25,7 @@
     <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
         <form action="../usuario/procesar/logear.php" method="post">
         <div class="d-flex align-items-center mb-3 pb-1">
-            <span class="h1 fw-bold mb-0">Login de Administrador</span>
+            <span class="h1 fw-bold mb-0">Login de Usuario</span>
         </div>
         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Iniciar sesión en su cuenta</h5>
         <!-- Email input -->
