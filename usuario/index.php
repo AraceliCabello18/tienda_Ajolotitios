@@ -44,6 +44,7 @@
                 <button class="btn btn-primary">Entrar</button>
                 <a href="./registro.php" class="btn btn-danger">Registro</a>
                     </div>
+                    <a href="../index.php">salir </a>
                     </div>
                 </form>
             </div>

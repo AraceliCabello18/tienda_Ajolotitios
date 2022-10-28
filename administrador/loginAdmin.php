@@ -43,7 +43,10 @@
         </div>
     <!-- Submit button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
-    </form>	
+    <div class="d-flex justify-content-around align-items-center mb-4">
+        <a href="../index.php">salir </a>
+    </div>    
+</form>	
 </div>
 </div>
     <?php include "../footer.php"; ?>

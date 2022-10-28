@@ -46,7 +46,7 @@ CREATE TABLE `clientes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `clientes` (`id`, `name`, `email`, `phone`, `tarjeta`, `address`, `created`, `modified`, `status`) VALUES
-(1, 'Alicia Alvarado', 'Alicia@gmail.com', '5504356789', '', 'calle san juan, Mexico', '2018-02-17 08:21:25', '2018-02-17 08:21:25', '1');
+(1, 'Araceli Cabello', 'Araceli@gmail.com', '5504356789', '12345bd4567yu', 'calle Niños Heroes No 24 en la cdmx en Mexico delegacion Milpa Alta', '2018-02-17 08:21:25', '2018-02-17 08:21:25', '1');
 
 CREATE TABLE `imagenes` (
   `id_imagen` int(11) NOT NULL,
