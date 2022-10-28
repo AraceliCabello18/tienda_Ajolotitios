@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="librerias/css/style.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
-    <title>Los Ajolotitos Tecnológicos S.A De C.V</title>
+    <title>Armario Vintage</title>
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
     <div class="container">
-        <a class="navbar-brand" href="#">Armario Vintage</a>
+        <a class="navbar-brand" href="#">Los Ajolotitos Tecnológicos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,6 +38,9 @@
             </li>
             <li class="nav-item">
             <a class="nav-link" href="VerCarta.php">Ver Carta</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./procesar/logout.php">Salir</a>
             </li>
         </ul>
         </div>

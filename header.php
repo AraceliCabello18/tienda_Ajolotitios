@@ -27,7 +27,7 @@
             </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./usuario/loginUser">Usuarios</a>
+              <a class="nav-link" href="./usuario/index.php">Usuarios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./administrador/loginAdmin.php">Administrador</a>

@@ -63,7 +63,7 @@ if(isset($_SESSION['usuario'])){
 
                         $datos=$obj->mostrarDatos($sql);
 
-                        	 foreach ($datos as $key){
+                        	foreach ($datos as $key){
                     ?>
 
 					<tr>

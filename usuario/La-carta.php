@@ -146,6 +146,7 @@ class Cart {
 			if(!is_array($val) OR !isset($val['price'], $val['qty'])){
 				continue;
 			}
+
 			$this->cart_contents['cart_total'] += ($val['price'] * $val['qty']);
 			$this->cart_contents['total_items'] += $val['qty'];
 			$this->cart_contents[$key]['subtotal'] = ($this->cart_contents[$key]['price'] * $this->cart_contents[$key]['qty']);
@@ -172,6 +173,7 @@ class Cart {
 		$this->save_cart();
 		return TRUE;
 	}
+    
     /**
 	 * Destroy the cart: Empties the cart and destroy the session
 	 * @return	void

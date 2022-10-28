@@ -2,7 +2,7 @@
     <!-- Page Content -->
     <div class="container">
     <div class="jumbotron">
-			<h1 class="display-4">Los Ajolotitos</h1>
+			<h1 class="display-4">Los Ajolotitos Tecnológicos</h1>
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="card">

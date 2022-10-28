@@ -53,7 +53,7 @@ $cart = new Cart;
             <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>" onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
             <td><?php echo '$'.$item["subtotal"].' MXN'; ?></td>
             <td>
-                <a href="AccionCarta.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-danger" onclick="return confirm('Confirma eliminar?')"><i class="glyphicon glyphicon-trash"></i>Eliminar</a>
+                <a href="./AccionCarta.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-danger" onclick="return confirm('Confirma eliminar?')"><i class="glyphicon glyphicon-trash"></i>Eliminar</a>
             </td>
         </tr>
         <?php } }else{ ?>
@@ -71,11 +71,9 @@ $cart = new Cart;
         </tr>
     </tfoot>
     </table>
-    
     </div>
- <div class="panel-footer"></div>
- </div><!--Panek cierra-->
- 
+<div class="panel-footer"></div>
+</div><!--Panek cierra-->
 </div>
 </body>
 </html>

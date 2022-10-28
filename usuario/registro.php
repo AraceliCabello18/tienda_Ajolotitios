@@ -1,57 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
+    <title>Los Ajolotitos Tecnológicos</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="librerias/css/style.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
-    <title>Los Ajolotitos Tecnológicos S.A De C.V</title>
+    <link rel="stylesheet" href="css/public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
-<div class="jumbotron">
-<section class="vh-100">
-<div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
-        <div class="col-md-8 col-lg-7 col-xl-6">
-            <img src="./librerias/img/Ajolotitos .png" class="img-fluid" alt="Phone image">
-        </div>
-    <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-        <form action="./procesos/registroUsuarios.php" method="post">
-            <div class="d-flex align-items-center mb-3 pb-1">
-                <span class="h1 fw-bold mb-0">Registro</span>
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <img src="./img/Ajolotitos .png"
+                    class="img-fluid" alt="Phone image">
+                    <hr>
+                
+            <h2>Rigistro de usuario</h2>
+            <form action="./procesar/registraUsusrio.php"method="post">
+            <input type="text" name="usuario" placeholder="Usuario" class="form-control"  require>
+            <br>
+            <input type="text" name="password"placeholder="password" class="form-control"  require>
+            <br>
+            <button class="btn btn-primary">Crea nuevo usuario</button>
+            </form>
+            <br>
+            <a href="./index.php" class="btn btn-success">si ya tienes cuenta entra </a>
             </div>
-        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Regístrate Ahora</h5>
-        <div class="form-outline mb-4">
-            <input type="text" id="Usuario" class="form-control form-control-lg" name="usuario" placeholder="Usuario"/>
-            <label class="form-label" for="Usuario">Usuario</label>
-        </div>
-        <div class="form-outline mb-4">
-            <input type="password" id="Password" class="form-control form-control-lg" name="password" placeholder="Password"/>
-            <label class="form-label" for="Password">Password</label>
-        </div>
-        <div class="d-flex justify-content-around align-items-center mb-4">
-        <a href="./loginUser.php">Login</a>
-        </div>
-    <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Crear Administrador</button>
+                <br>
         
-    </form>
-</div>
-</div>
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
-    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
-    
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

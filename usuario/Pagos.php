@@ -1,8 +1,8 @@
 <?php include "./headerUser.php"; ?>
- <?php include "./footerUser.php"; ?>
+<?php include "./footerUser.php"; ?>
 <?php
 // include database configuration file
-include './usuario/procesos/conexion.php';
+include './Configuracion.php';
 
 // initializ shopping cart class
 include './La-carta.php';
@@ -10,7 +10,7 @@ $cart = new Cart;
 
 // redirect to home if cart is empty
 if($cart->total_items() <= 0){
-    header("Location: indexUser.php");
+    header("Location: ../login/inicio.php");
 }
 
 // set customer ID in session
@@ -36,7 +36,7 @@ $custRow = $query->fetch_assoc();
 <body>
 <div class="container">
     <h1>Vista previa de la Orden</h1>
-    <table class="table">
+    <table class="table table-striped">
     <thead>
         <tr>
             <th>Producto</th>
@@ -79,8 +79,8 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $custRow['address']; ?></p>
     </div>
     <div class="footBtn">
-        <a href="producto.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
-        <a href="AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="./producto.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
+        <a href="./AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
         </div>
  <div class="panel-footer"></div>

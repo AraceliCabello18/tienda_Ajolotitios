@@ -1,12 +1,12 @@
-<?php include "./footerUser.php"; ?>
+<?php include "footerUser.php"; ?>
 <?php
 date_default_timezone_set("America/Lima");
 // Iniciamos la clase de la carta
-include './La-carta.php';
+include 'La-carta.php';
 $cart = new Cart;
 
 // include database configuration file
-include '../usuario/procesos/conexion.php';
+include 'Configuracion.php';
 if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
     if($_REQUEST['action'] == 'addToCart' && !empty($_REQUEST['id'])){
         $productID = $_REQUEST['id'];
@@ -21,7 +21,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         );
         
         $insertItem = $cart->insert($itemData);
-        $redirectLoc = $insertItem?'VerCarta.php':'indexUser.php';
+        $redirectLoc = $insertItem?'VerCarta.php':'incio.php';
         header("Location: ".$redirectLoc);
     }elseif($_REQUEST['action'] == 'updateCartItem' && !empty($_REQUEST['id'])){
         $itemData = array(
@@ -58,8 +58,8 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             header("Location: Pagos.php");
         }
     }else{
-        header("Location: indexUser.php");
+        header("Location: ./inicio.php");
     }
 }else{
-    header("Location: indexUser.php");
+    header("Location: ./inicio.php");
 }

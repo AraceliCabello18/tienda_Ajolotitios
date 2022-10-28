@@ -1,13 +1,15 @@
-<?php include "header.php"; ?>
-    <!-- Page Content -->
-    <div class="container">
+<?php include "./headerUser.php"; ?>
+<?php session_start();
+if(isset($_SESSION['usuario'])){
+?>
+<div class="container">
     <div class="jumbotron">
-			<h1 class="display-4">Los Ajolotitos</h1>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="card">
-						<div class="card-body">
-							<img src="librerias/img/Ajolotitos .png" class="img-fluid" alt="Responsive image">
+    <h2>Bienvenido <?php echo $_SESSION['usuario']?></h2>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="card">
+					<div class="card-body">
+						<img src="./img/Ajolotitos .png" class="img-fluid" alt="Responsive image">
 						</div>
 					</div>
 				</div>
@@ -46,4 +48,13 @@
 			</p>
 		</div>
     </div>
-    <?php include "./footerUser.php"; ?>
+
+
+
+<?php
+}else{
+    header('location:../index.php');
+}
+?>
+
+<?php include "./footerUser.php"; ?>
